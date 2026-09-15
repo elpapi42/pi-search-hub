@@ -45,7 +45,7 @@ export interface SearchConfig {
 	reader?: "jina" | "sofya" | "firecrawl" | "exa" | "exa_mcp";
 	/** Reader fallback order for web_read. When the primary reader fails (422, 5xx, timeout), try the next in this list. Default: ["jina", "sofya", "firecrawl", "exa", "exa_mcp"]. */
 	readerFallback?: string[];
-	/** Show status line with enabled backends. Default: true. Set to false to hide. */
+	/** Show startup, search, and reader footer status. Default: true. Set to false to hide and clear these statuses. */
 	showStatus?: boolean;
 	/** Cache TTL in milliseconds. Default: 300000 (5 min). Set to 0 to disable. */
 	cacheTtl?: number;
